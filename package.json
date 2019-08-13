@@ -1,0 +1,26 @@
+{
+  "name": "hooks-with-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "next": "^9.0.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-toastify": "^5.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "react-hooks": "^1.0.1"
+  }
+}
