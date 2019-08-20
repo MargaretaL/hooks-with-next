@@ -1,14 +1,15 @@
 
 import ImageTogglerOnScroll from "./ImageTogglerOnScroll";
+import "../static/site.css";
 
 const SpeakerDetail = ({
-                           id,
-                           firstName,
-                           lastName,
-                           favorite,
-                           bio,
-                           onHeartFavoriteHandler
-                       }) => {
+    id,
+    firstName,
+    lastName,
+    favorite,
+    bio,
+    onHeartFavoriteHandler
+}) => {
     //console.log(`SpeakerDetail:${id} ${firstName} ${lastName} ${favorite}`);
     return (
         <div className="card col-4 cardmin">
@@ -22,16 +23,15 @@ const SpeakerDetail = ({
                 <h4 className="card-title">
                     <button
                         data-sessionid={id}
-                        className={favorite ? "heartredbutton" : "heartdarkbutton"}
+                        className={favorite===true ? "heartredbutton" : "heartdarkbutton"}
                         onClick={e => {
                             onHeartFavoriteHandler(e, !favorite);
                         }}
                     />
                     <span>
-            {firstName} {lastName}
-          </span>
+                        {firstName} {lastName}
+                    </span>
                 </h4>
-
                 <span>{bio}</span>
             </div>
         </div>

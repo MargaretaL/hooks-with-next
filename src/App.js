@@ -1,7 +1,8 @@
     
 import React from "react";
 import Home from "./Home";
-import Speakers from "./Speakers";
+import Speakers from "./Speakers"
+import SpeakerData from './SpeakerData';
 
 export const ConfigContext = React.createContext();
 
@@ -12,7 +13,12 @@ const pageToShow = pageName => {
 };
 
 const configValue = {
-    showSpeakerSpeakingDays: false
+    showSpeakerSpeakingDays: false,
+    names: [
+        'a','b','c','d','e','f','g','h','i'
+    ],
+    showSignMeUp: true,
+    speaker: SpeakerData[0].firstName
 };
 
 const App = ({ pageName }) => {
